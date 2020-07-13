@@ -8,7 +8,7 @@ public class CatTest {
     public void nullaryConstructorTest() {
         // Given
         PetOwner expectedOwner = null;
-        String expectedName = "Cat name";
+        String expectedName = "";
         Integer expectedAge = 0;
         Cat cat = new Cat();
 
@@ -45,7 +45,7 @@ public class CatTest {
     @Test
     public void constructorWithAgeTest() {
         // Given
-        String expectedName = "Cat name";
+        String expectedName = "";
         Integer expectedAge = Integer.MAX_VALUE;
         Cat cat = new Cat(expectedAge);
 

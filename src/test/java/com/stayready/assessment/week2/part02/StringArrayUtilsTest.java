@@ -32,7 +32,7 @@ public class StringArrayUtilsTest {
         Assert.assertArrayEquals(expected, actual);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = NegativeArraySizeException.class)
     public void testGetEndingArrayOutOfBounds1() {
         // given
         String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
@@ -101,7 +101,7 @@ public class StringArrayUtilsTest {
         StringArrayUtils.getSubArray(input, startIndex, endIndex);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = NegativeArraySizeException.class)
     public void testGetSubArrayOutOfBounds2() {
         // given
         String[] input = {"The", "Quick", "Brown", "Fox", "Jumps"};
